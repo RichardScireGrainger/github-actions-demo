@@ -29,6 +29,10 @@ jobs:
       - name: Get perl version
         run: perl --version
 
+      # Runs a single command using the runners shell
+      - name: Get current directory
+        run: Get-Location
+
       - uses: perl-actions/install-with-cpanm@v1
         with:
           install: |
